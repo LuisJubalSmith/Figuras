@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica Figura</title>
+    <script src="js/app.js"></script>
+    <script src="js/Figura.js"></script>
+    <script src="js/Square.js"></script>
+    <script src="js/Circle.js"></script>
+    <script src="js/Triangle.js"></script>
+    <script src="js/Parallelogram.js"></script>
+    <script src="js/Trapezoid.js"></script>
+    <script src="js/Egg.js"></script>
+    <script src="js/PacMan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav>
+            <h1 class="text-white ml-5">Programa Figuras</h1>
+        </nav>
+    </header>
+
+    <section class="form-row">
+        <aside class="col">
+            <input type="number" id="iwidthTxt" class="mt-2 form-control" placeholder="Width">
+        </aside>
+        <aside class="col">
+            <input type="number" id="iheightTxt" class="mt-2 form-control" placeholder="Height">
+        </aside>
+        <aside class="col">
+            <select id="sltColor" class="mt-2 form-control">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+            </select>
+        </aside>
+        <aside class="col">
+            <select id="sltFigura" class="mt-2 form-control">
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+                <option value="parallelogram">Parallelogram</option>
+                <option value="trapezoid">Trapezoid</option>
+                <option value="pacman">PacMan</option>
+                <option value="egg">Egg</option>
+            </select>
+        </aside>
+        <aside class="col">
+            <button id="bcreate" class="mt-2">Create</button>
+        </aside>
+    </section>
+    <br>
+    <br>
+    <div id="dcontainer" class="ml-5"></div>
+</body>
+
+
+</html>
